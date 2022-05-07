@@ -38,3 +38,7 @@ char IsWin()	结果判断函数
 
 
 
+
+
+本程序基于Visual Studio2022的IDE环境实现。
+
