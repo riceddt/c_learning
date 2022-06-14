@@ -55,6 +55,8 @@ int main()
 		case SORT:
 			break;
 		case EXIT:
+			//销毁通讯录，释放动态开辟内存
+			DestroyContact(&con);
 			printf("退出通讯录\n");
 			break;
 		default:

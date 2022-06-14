@@ -4,11 +4,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#define MAX 1000
+//#define MAX 1000
 #define MAX_NAME 20
 #define MAX_SEX 5
 #define MAX_TELE 12
 #define MAX_ADDR 30
+#define DEFAULT_SZ 3
 
 enum Option  //增加代码可读性
 {
@@ -33,8 +34,9 @@ struct PeoInfo
 ///通讯录
 struct Contact
 {
-	struct PeoInfo data[MAX];
-	int size;
+	struct PeoInfo* data;
+	int size;//已经有的元素个数
+	int capacity;//当前通讯录最大容量
 };
 
 //声明函数
@@ -50,3 +52,5 @@ void DelContact(struct Contact* ps);
 void SearchContact(struct Contact* ps);
 //修改指定联系人信息
 void ModifyContact(struct Contact* ps);
+//销毁通讯录，释放动态分配内存
+void DestroyContact(struct Contact* ps);
