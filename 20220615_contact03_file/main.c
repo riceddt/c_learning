@@ -39,15 +39,20 @@ int main()
 		{
 		case ADD:
 			AddContact(&con);
+			SaveContact(&con);
 			break;
 		case DEL:
 			DelContact(&con);
+			//删除之后自动保存到文件中
+			SaveContact(&con);
 			break;
 		case SEARCH:
 			SearchContact(&con);
 			break;
 		case MODIFY:
 			ModifyContact(&con);
+			//修改后自动保存到文件中
+			SaveContact(&con);
 			break;
 		case SHOW:
 			ShowContact(&con);
