@@ -1,7 +1,8 @@
 #pragma once
 #include <string>
 #include "Goodgay.h"
-using namespace std;
+
+using std::string;
 
 class Building
 {

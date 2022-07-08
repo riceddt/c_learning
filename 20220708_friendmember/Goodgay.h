@@ -1,7 +1,6 @@
 #pragma once
-using namespace std;
 
-class Building;//先声明，仅用于创建指针，类中具体成员不用知道，不需要引用类的头文件
+class Building;//前向引用,先声明，仅用于创建指针，类中具体成员不用知道，不需要引用类的头文件
 class Goodgay
 {
 public:

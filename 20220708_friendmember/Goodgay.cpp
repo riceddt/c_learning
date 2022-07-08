@@ -1,7 +1,9 @@
 #include<iostream>
+#include "Building.h"
 #include "Goodgay.h"
-#include"Building.h"
-using namespace std;
+
+using std::cout;
+using std::endl;
 
 Goodgay::Goodgay()
 {

@@ -1,9 +1,5 @@
-#include<iostream>
-#include<string>
-#include "Building.h"
 #include "Goodgay.h"
-
-using namespace std;
+#include "Building.h"
 
 //È«¾Öº¯Êý
 void test01()
