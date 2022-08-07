@@ -4,6 +4,7 @@
 
 输入“abc”，abc构成顺序循环，如图所示，
 
-![circle](circle.jpg)
+<img src="circle.jpg" alt="circle" style="zoom:50%;" />
 
 可查找“abc”、“bca”、“cab”三种模式子串
+
