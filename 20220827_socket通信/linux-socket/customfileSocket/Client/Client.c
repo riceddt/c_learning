@@ -77,7 +77,10 @@ int main()
     exit(1); 
   } 
  
-  // 打开文件，准备写入 
+  // 打开文件，准备写入
+  char* pPath = file_name;
+  printf("%s", strrchr(pPath, '/') + 1);
+  sprintf(file_name,strrchr(pPath,'/')+1); 
   FILE *fp = fopen(file_name, "w"); 
   if(NULL == fp) 
   { 
