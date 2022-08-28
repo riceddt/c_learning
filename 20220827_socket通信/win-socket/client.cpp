@@ -35,7 +35,16 @@ void RecvFile(){
 	cout<<"start recv!"<<endl;
 	memset(buffer,0,sizeof(buffer));
 	int readLen = 0;
-	string desFileName = strrchr(file_name,'\\')+1;	//去掉文件路径，只获取文件名，文件保存在和client同一位置下。
+	string desFileName = file_name;
+	int fname_len=strlen(file_name);
+	for(int i = 0;i < fname_len;i++)
+	{
+		if(file_name[i]=='\\')
+		{
+			desFileName = strrchr(file_name,'\\')+1;//去掉文件路径，只获取文件名，文件保存在和client同一位置下。
+			break;
+		}
+	}
 	cout<<desFileName<<endl;
 	ofstream desFile;
 	desFile.open(desFileName.c_str(), ios::binary);
